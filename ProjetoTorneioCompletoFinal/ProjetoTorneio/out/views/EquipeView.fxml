@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<VBox spacing="10" xmlns:fx="http://javafx.com/fxml" fx:controller="controllers.EquipeController" padding="10">
+    <HBox spacing="10">
+        <TextField fx:id="nomeField" promptText="Nome da Equipe"/>
+        <TextField fx:id="paisField" promptText="País"/>
+        <Button text="Salvar" onAction="#salvarEquipe"/>
+    </HBox>
+
+    <TableView fx:id="tabelaEquipes">
+        <columns>
+            <TableColumn fx:id="colId" text="ID"/>
+            <TableColumn fx:id="colNome" text="Nome"/>
+            <TableColumn fx:id="colPais" text="País"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="10">
+        <Button text="Editar" onAction="#editarEquipe"/>
+        <Button text="Excluir" onAction="#excluirEquipe"/>
+    </HBox>
+</VBox>

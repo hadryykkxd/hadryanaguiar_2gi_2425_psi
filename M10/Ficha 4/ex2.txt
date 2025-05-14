@@ -1,0 +1,19 @@
++-------------------+
+|     Cliente       |
++-------------------+
+| - nome: String    |
+| - contas: List<ContaBancaria> |
++-------------------+
+| + definirCliente(nome: String): void |
+| + saberNome(): String |
++-------------------+
+
++-------------------+
+|  ContaBancaria    |
++-------------------+
+| - saldo: double   |
++-------------------+
+| + depositar(quantia: double): void |
+| + levantar(quantia: double): boolean |
+| + saberSaldo(): double |
++-------------------+

@@ -1,0 +1,24 @@
++-------------------+
+|      Carro        |
++-------------------+
+| - velocidade: int |
+| - velocidadeMaxima: int |
+| - motor: Motor    |
++-------------------+
+| + Carro()         |
+| + acelerar(kmh: int): void |
+| + travar(kmh: int): void |
+| + saberVelocidade(): int |
++-------------------+
+
++-------------------+
+|      Motor        |
++-------------------+
+| - potencia: int   |
+| - combustivel: String |
+| - ligada: Boolean |
++-------------------+
+| + Motor()         |
+| + Ligar(): Boolean|
+| + Desligar(): Boolean|
++-------------------+
